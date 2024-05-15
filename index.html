@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <!-- ==== favicon link ==== -->
+    <link rel="shortcut icon" href="/favicon (1).ico" type="image/x-icon" />
+    <!-- ==== css file  link ==== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==== QR code generate part start ==== -->
+    <div class="qr-box">
+      <header>
+        <h1>QR Code Generator</h1>
+        <p>Paste a url or enter text to create QR code</p>
+      </header>
+      <form>
+        <input
+          class="input-box"
+          type="text"
+          placeholder="Enter text or url"
+          required
+        />
+        <button class="generate-btn">generate QR code</button>
+      </form>
+      <div class="qr-image">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/dev-rohan2024"
+          alt="qr image"
+        />
+      </div>
+    </div>
+    <!-- ==== QR code generate part end ==== -->
+    <!-- ==== Javascript file link ==== -->
+    <script src="script.js"></script>
+  </body>
+</html>
